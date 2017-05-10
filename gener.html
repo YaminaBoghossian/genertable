@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>genertable</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	let tablo = [ "Toto", "Tata", "Titi", "Tutu"];
+	let arr = document.createElement('table');
+	document.body.appendChild(arr);
+	
+	for (let i = 0; i < tablo.length; i = i + 1) {
+		console.log (tablo [i]);
+		let tr = document.createElement('tr');
+		tr.innerHTML = tablo [i];
+		arr.appendChild(tr);
+
+
+
+	};
+
+
+
+</script>
+
+
+</body>
+</html>
